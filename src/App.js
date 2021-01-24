@@ -4,22 +4,14 @@ import PuppyGrid from "./components/PuppyGrid";
 import {IoPawSharp} from "react-icons/io5"
 import { useEffect, useState } from "react";
 import { apiGetAllDogBreeds, apiGetRandomImage } from "./api";
+
 /*
-Using React, create the basic page that lists and filters dog breeds. This is the docs for the API you will interface
-with: https://dog.ceo/dog-api/documentation/. You will use the API to fetch a list of dog breeds which will be the basis of
-your app. By default, your page should have a tiled view of all dog breeds returned from that API with the name of the breed
-overlaying the image of the breed.
-There should be a way to filter the dog breed names based on an input on the page. When a user is typing, the tiles should
-automatically show/not show based on the filter input changing. Your page should be responsive. You can choose whether to
-include sub-breeds into your app or not.
-
-
 TODO: 
-- Filter input 
-- Grid
+clean up tree search algorithm 
+move all styles to css 
+get rid of puppygrid component
 
 */
-
 export default function App() {
   let [puppies, setPuppies] = useState([]);
   let [filter, setFilter] = useState('');
@@ -47,7 +39,6 @@ export default function App() {
             }
           });
         }
-
         // Dogs with two names:
         if (entry[1].length > 0) {
           entry[1].forEach((subPup, subIndex) => {
@@ -82,10 +73,16 @@ export default function App() {
   return (
     <main>
       <header>
-        <h1>It's Puppy Time <IoPawSharp style={{position: "relative", top:"5px"}} />
-        <input onChange={handleChange}
-        type="text"
-        value={filter} /> </h1>
+        <h1>
+          It's Puppy Time 
+          <IoPawSharp style={{position: "relative", top:"5px"}} />
+          <span style={{fontSize: '12px', float: "right", position: "relative", top: "15px"}}>All dogs are puppies.</span>
+          <input
+            onChange={handleChange}
+            type="text"
+            value={filter} 
+          /> 
+        </h1>
         <PuppyGrid puppies={puppies} />
       </header>
     </main>

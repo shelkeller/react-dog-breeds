@@ -15,10 +15,11 @@ const GridEntry = (props) => {
   } 
   return (
     <>
-    { !puppy.filtered && 
-      <div className="grid-entry" style={backgroundStyle}>
-      <span className="entry-label" style={labelStyle}>{puppy.firstName} {puppy.lastName}</span>
-    </div>
+    { 
+    !puppy.filtered && 
+        <div className="grid-entry" style={backgroundStyle}>
+        <span className="entry-label" style={labelStyle}>{puppy.firstName} {puppy.lastName}</span>
+        </div>
     }
   </>
     

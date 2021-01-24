@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-dog-breeds/static/css/main.de8c5313.chunk.css",
+    "main.css": "/react-dog-breeds/static/css/main.8cb3b755.chunk.css",
     "main.js": "/react-dog-breeds/static/js/main.67d279f2.chunk.js",
     "main.js.map": "/react-dog-breeds/static/js/main.67d279f2.chunk.js.map",
     "runtime-main.js": "/react-dog-breeds/static/js/runtime-main.49709ebc.js",
@@ -8,13 +8,13 @@
     "static/js/2.f1c150c0.chunk.js": "/react-dog-breeds/static/js/2.f1c150c0.chunk.js",
     "static/js/2.f1c150c0.chunk.js.map": "/react-dog-breeds/static/js/2.f1c150c0.chunk.js.map",
     "index.html": "/react-dog-breeds/index.html",
-    "static/css/main.de8c5313.chunk.css.map": "/react-dog-breeds/static/css/main.de8c5313.chunk.css.map",
+    "static/css/main.8cb3b755.chunk.css.map": "/react-dog-breeds/static/css/main.8cb3b755.chunk.css.map",
     "static/js/2.f1c150c0.chunk.js.LICENSE.txt": "/react-dog-breeds/static/js/2.f1c150c0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.49709ebc.js",
     "static/js/2.f1c150c0.chunk.js",
-    "static/css/main.de8c5313.chunk.css",
+    "static/css/main.8cb3b755.chunk.css",
     "static/js/main.67d279f2.chunk.js"
   ]
 }
