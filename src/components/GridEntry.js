@@ -1,8 +1,12 @@
 const GridEntry = (props) => {
   let { puppy } = props;
-  let backgroundStyle = { backgroundImage: "url(" + puppy.image + ")", backgroundSize: 'cover', position: 'relative' };
+  let backgroundStyle = { 
+    backgroundImage: "url(" + puppy.image + ")", 
+    backgroundSize: 'cover', 
+    position: 'relative'
+   };
+  
   let labelStyle = {
-    backgroundColor: "white", 
     padding: "5px", 
     position: "absolute", 
     bottom: "5px", 
@@ -10,9 +14,14 @@ const GridEntry = (props) => {
     borderRadius: "10px"
   } 
   return (
-    <div className="grid-entry" style={backgroundStyle}>
-      <span style={labelStyle}>{puppy.firstName} {puppy.lastName}</span>
+    <>
+    { !puppy.filtered && 
+      <div className="grid-entry" style={backgroundStyle}>
+      <span className="entry-label" style={labelStyle}>{puppy.firstName} {puppy.lastName}</span>
     </div>
+    }
+  </>
+    
   );
 };
 

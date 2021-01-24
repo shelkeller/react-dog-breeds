@@ -1,8 +1,8 @@
 import "./styles.css";
 import * as React from "react";
 import PuppyGrid from "./components/PuppyGrid";
+import {IoPawSharp} from "react-icons/io5"
 import { useEffect, useState } from "react";
-import axios from "axios";
 import { apiGetAllDogBreeds, apiGetRandomImage } from "./api";
 /*
 Using React, create the basic page that lists and filters dog breeds. This is the docs for the API you will interface
@@ -22,13 +22,7 @@ TODO:
 
 export default function App() {
   let [puppies, setPuppies] = useState([]);
-
-  /*
-  GET DOG PLAN: 
-  first get all dog breeds 
-  https://dog.ceo/api/breeds/list/all
-  message.entries into 2D
-  */
+  let [filter, setFilter] = useState('');
 
   useEffect(() => {
     apiGetAllDogBreeds().then((rsp) => {
@@ -75,10 +69,25 @@ export default function App() {
     });
   }, []);
 
+  const handleChange = e => {
+   setFilter(e.target.value);
+  
+   let newPuppies = puppies.map(puppy => {
+      puppy.filtered = !puppy.firstName.includes(e.target.value) && !puppy.lastName.includes(e.target.value);
+      return puppy;
+   });
+
+   setPuppies(newPuppies);
+
+  }
+
   return (
     <main>
       <header>
-        <h1>It's Puppy Time <input type="text" /> </h1>
+        <h1>It's Puppy Time <IoPawSharp style={{position: "relative", top:"5px"}} />
+        <input onChange={handleChange}
+        type="text"
+        value={filter} /> </h1>
         <PuppyGrid puppies={puppies} />
       </header>
     </main>

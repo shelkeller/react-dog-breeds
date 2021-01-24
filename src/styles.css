@@ -1,14 +1,20 @@
 
-body {
-  background-color: lightseagreen;
-  font-family: 'Quicksand', sans-serif;
+* {
+  --border-color: #214e52;
 
 }
 
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: var(--border-color);
+  background-image: linear-gradient(#a2d0c1,  rgb(199, 248, 179))
+}
+
 h1 {
-  background-color: white;
+  background-color:#eff7e1;
   padding: .5em;
   border-radius: 15px;
+  border: 5px solid var(--border-color);
 }
 
 input[type="text"] {
@@ -17,6 +23,8 @@ input[type="text"] {
     margin-bottom: 5px;
     height: 30px;
     width: 40%;
+    border: 1px solid var(--border-color);
+
 }
 /* 
 I was worried about time, so I went with sort of a hacky solution I found by googling
@@ -49,4 +57,10 @@ https://medium.com/cloudaper/how-to-create-a-flexible-square-grid-with-css-grid-
   padding: 1px;
   margin: 0.5em;
   border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.entry-label {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
 }
