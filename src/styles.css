@@ -1,0 +1,38 @@
+
+body {
+  background-color: lightseagreen;
+  font-family: 'Quicksand', sans-serif;
+
+}
+/* 
+I was worried about time, so I went with sort of a hacky solution I found by googling
+around instead of what would have normally done, which is work this out using
+flexbox. 
+Here's the credit for the grid css: 
+https://medium.com/cloudaper/how-to-create-a-flexible-square-grid-with-css-grid-layout-ea48baf038f3
+ */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  grid-auto-rows: 1fr;
+}
+
+.grid::before {
+  content: "";
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.grid > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.grid-entry {
+  background-color: lightgrey;
+  padding: 1px;
+  margin: 0.5em;
+  border-radius: 5px;
+}
