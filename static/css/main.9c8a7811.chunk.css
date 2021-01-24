@@ -1,0 +1,2 @@
+body{background-color:#20b2aa;font-family:"Quicksand",sans-serif}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(11rem,1fr));grid-auto-rows:1fr}.grid:before{content:"";width:0;padding-bottom:100%}.grid:before,.grid>:first-child{grid-row:1/1;grid-column:1/1}.grid-entry{background-color:#d3d3d3;padding:1px;margin:.5em;border-radius:5px}
+/*# sourceMappingURL=main.9c8a7811.chunk.css.map */
