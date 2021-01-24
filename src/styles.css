@@ -3,6 +3,16 @@
   --border-color: #214e52;
 }
 
+main {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  main {
+    width: 75%;
+    margin: auto;
+  }
+}
+
 body {
   font-family: 'Quicksand', sans-serif;
   color: var(--border-color);

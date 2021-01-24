@@ -75,22 +75,21 @@ export default function App() {
    setPuppies(newPuppies);
 
   }
-
   return (
     <main>
       <header>
         <h1>
           It's Puppy Time 
           <IoPawSharp style={{position: "relative", top:"5px"}} />
-          <span style={{fontSize: '15px', float: "right", position: "relative", top: "15px"}}>All dogs are puppies.</span>
+          <span style={{fontSize: '15px', float: "right", position: "relative", top: "5px"}}>All dogs are puppies.</span>
           <input
             onChange={handleChange}
             type="text"
             value={filter} 
           /> 
         </h1>
+        </header>
         <PuppyGrid puppies={puppies} puppiesLoaded={puppiesLoaded} />
-      </header>
     </main>
   );
 }
