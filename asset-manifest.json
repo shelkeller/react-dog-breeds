@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/react-dog-breeds/static/css/main.5745c089.chunk.css",
-    "main.js": "/react-dog-breeds/static/js/main.9fd63784.chunk.js",
-    "main.js.map": "/react-dog-breeds/static/js/main.9fd63784.chunk.js.map",
+    "main.css": "/react-dog-breeds/static/css/main.8828b7c2.chunk.css",
+    "main.js": "/react-dog-breeds/static/js/main.b6265d13.chunk.js",
+    "main.js.map": "/react-dog-breeds/static/js/main.b6265d13.chunk.js.map",
     "runtime-main.js": "/react-dog-breeds/static/js/runtime-main.49709ebc.js",
     "runtime-main.js.map": "/react-dog-breeds/static/js/runtime-main.49709ebc.js.map",
-    "static/js/2.093884fd.chunk.js": "/react-dog-breeds/static/js/2.093884fd.chunk.js",
-    "static/js/2.093884fd.chunk.js.map": "/react-dog-breeds/static/js/2.093884fd.chunk.js.map",
+    "static/js/2.45feea6d.chunk.js": "/react-dog-breeds/static/js/2.45feea6d.chunk.js",
+    "static/js/2.45feea6d.chunk.js.map": "/react-dog-breeds/static/js/2.45feea6d.chunk.js.map",
     "index.html": "/react-dog-breeds/index.html",
-    "static/css/main.5745c089.chunk.css.map": "/react-dog-breeds/static/css/main.5745c089.chunk.css.map",
-    "static/js/2.093884fd.chunk.js.LICENSE.txt": "/react-dog-breeds/static/js/2.093884fd.chunk.js.LICENSE.txt"
+    "static/css/main.8828b7c2.chunk.css.map": "/react-dog-breeds/static/css/main.8828b7c2.chunk.css.map",
+    "static/js/2.45feea6d.chunk.js.LICENSE.txt": "/react-dog-breeds/static/js/2.45feea6d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.49709ebc.js",
-    "static/js/2.093884fd.chunk.js",
-    "static/css/main.5745c089.chunk.css",
-    "static/js/main.9fd63784.chunk.js"
+    "static/js/2.45feea6d.chunk.js",
+    "static/css/main.8828b7c2.chunk.css",
+    "static/js/main.b6265d13.chunk.js"
   ]
 }
