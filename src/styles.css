@@ -7,7 +7,7 @@
 body {
   font-family: 'Quicksand', sans-serif;
   color: var(--border-color);
-  background-image: linear-gradient(#a2d0c1,  rgb(199, 248, 179))
+  background-color: #3ea19c
 }
 
 h1 {

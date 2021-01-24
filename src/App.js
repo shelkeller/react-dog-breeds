@@ -71,12 +71,10 @@ export default function App() {
 
   const handleChange = e => {
    setFilter(e.target.value);
-  
    let newPuppies = puppies.map(puppy => {
       puppy.filtered = !puppy.firstName.includes(e.target.value) && !puppy.lastName.includes(e.target.value);
       return puppy;
    });
-
    setPuppies(newPuppies);
 
   }
