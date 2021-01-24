@@ -1,7 +1,6 @@
 
 * {
   --border-color: #214e52;
-
 }
 
 body {
@@ -54,7 +53,6 @@ https://medium.com/cloudaper/how-to-create-a-flexible-square-grid-with-css-grid-
 }
 
 .grid-entry {
-  background-color: lightgrey;
   padding: 1px;
   margin: 0.5em;
   border-radius: 5px;
@@ -64,4 +62,17 @@ https://medium.com/cloudaper/how-to-create-a-flexible-square-grid-with-css-grid-
 .entry-label {
   background-color: #ffffff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.20), 0 3px 6px rgba(0, 0, 0, 0.50);
+  padding: 5px;
+  border-radius: 10px;
 }
+
+
+.loading {
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+

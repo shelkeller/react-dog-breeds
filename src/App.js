@@ -10,11 +10,13 @@ TODO:
 clean up tree search algorithm 
 move all styles to css 
 get rid of puppygrid component
-
+real responsive design
 */
+
 export default function App() {
   let [puppies, setPuppies] = useState([]);
   let [filter, setFilter] = useState('');
+  let [puppiesLoaded, setPuppiesLoaded] = useState(false);
 
   useEffect(() => {
     apiGetAllDogBreeds().then((rsp) => {
@@ -36,6 +38,7 @@ export default function App() {
               // We've reached the end and gotten all of our images.
               // Time to update the state and thus the DOM.
               setPuppies(pushPuppies);
+              setPuppiesLoaded(true);
             }
           });
         }
@@ -52,6 +55,7 @@ export default function App() {
                 // If our last entry happens to have children, we make sure we reach the
                 // end of those children.
                 setPuppies(pushPuppies);
+                setPuppiesLoaded(true);
               }
             });
           });
@@ -62,8 +66,10 @@ export default function App() {
 
   const handleChange = e => {
    setFilter(e.target.value);
+   // Search is case insensitive: 
+   let lowerCaseFilter = e.target.value.toLowerCase();
    let newPuppies = puppies.map(puppy => {
-      puppy.filtered = !puppy.firstName.includes(e.target.value) && !puppy.lastName.includes(e.target.value);
+      puppy.filtered = !puppy.firstName.includes(lowerCaseFilter) && !puppy.lastName.includes(lowerCaseFilter);
       return puppy;
    });
    setPuppies(newPuppies);
@@ -76,14 +82,14 @@ export default function App() {
         <h1>
           It's Puppy Time 
           <IoPawSharp style={{position: "relative", top:"5px"}} />
-          <span style={{fontSize: '12px', float: "right", position: "relative", top: "15px"}}>All dogs are puppies.</span>
+          <span style={{fontSize: '15px', float: "right", position: "relative", top: "15px"}}>All dogs are puppies.</span>
           <input
             onChange={handleChange}
             type="text"
             value={filter} 
           /> 
         </h1>
-        <PuppyGrid puppies={puppies} />
+        <PuppyGrid puppies={puppies} puppiesLoaded={puppiesLoaded} />
       </header>
     </main>
   );

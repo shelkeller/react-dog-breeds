@@ -7,18 +7,22 @@ const GridEntry = (props) => {
    };
   
   let labelStyle = {
-    padding: "5px", 
     position: "absolute", 
     bottom: "5px", 
-    left: "5px",
-    borderRadius: "10px"
+    left: "5px"
   } 
+
+  let firstLetterUc = (string) => {
+    if (string.length) return string[0].toUpperCase() + string.slice(1);
+    return '';
+  }
+
   return (
     <>
     { 
     !puppy.filtered && 
         <div className="grid-entry" style={backgroundStyle}>
-        <span className="entry-label" style={labelStyle}>{puppy.firstName} {puppy.lastName}</span>
+        <span className="entry-label" style={labelStyle}>{firstLetterUc(puppy.firstName)} {firstLetterUc(puppy.lastName)}</span>
         </div>
     }
   </>
