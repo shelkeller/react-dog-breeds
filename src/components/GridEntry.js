@@ -1,5 +1,7 @@
 const GridEntry = (props) => {
   let { puppy } = props;
+
+  
   let backgroundStyle = { 
     backgroundImage: "url(" + puppy.image + ")", 
     backgroundSize: 'cover', 
