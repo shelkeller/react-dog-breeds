@@ -3,11 +3,11 @@ const GridEntry = (props) => {
   let backgroundStyle = { backgroundImage: "url(" + puppy.image + ")", backgroundSize: 'cover', position: 'relative' };
   let labelStyle = {
     backgroundColor: "white", 
-    padding: "3px", 
+    padding: "5px", 
     position: "absolute", 
-    top: "10px", 
-    left: "10px",
-    borderRadius: "2px"
+    bottom: "5px", 
+    left: "5px",
+    borderRadius: "10px"
   } 
   return (
     <div className="grid-entry" style={backgroundStyle}>

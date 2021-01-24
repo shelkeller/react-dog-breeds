@@ -4,6 +4,20 @@ body {
   font-family: 'Quicksand', sans-serif;
 
 }
+
+h1 {
+  background-color: white;
+  padding: .5em;
+  border-radius: 15px;
+}
+
+input[type="text"] {
+  font-size: 20px;
+    margin-left: 10%;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 40%;
+}
 /* 
 I was worried about time, so I went with sort of a hacky solution I found by googling
 around instead of what would have normally done, which is work this out using

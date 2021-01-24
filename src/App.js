@@ -78,7 +78,7 @@ export default function App() {
   return (
     <main>
       <header>
-        <h1>It's Puppy Time</h1>
+        <h1>It's Puppy Time <input type="text" /> </h1>
         <PuppyGrid puppies={puppies} />
       </header>
     </main>
